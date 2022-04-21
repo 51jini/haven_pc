@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif; 
+*/
+
+/* base */
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; color: #666; }
+html,body{overflow: hidden;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+img{display: block; border: none;}
+address{font-style: normal;}
+table{border-spacing: 0; border-collapse: collapse;}
+fieldset{border: none;}
+legend.away, label.away{position: absolute; left: -999em;}
+button{border: 0; cursor: pointer;}
+.fl{float: left;}
+.fr{float: right;}
+.cf:after{content:''; clear:both; display:block;}
+
+.wrap{width: 1280px; height: 100%; margin: 0 auto; }
+
+/* popup */
+.popupWrap{position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,.7); z-index: 9000;}
+.popup{position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 500px; height: 600px; border: 8px solid #401910; box-sizing: border-box; background-color: #ededed;}
+.popup:before{content: ''; display: block; position: absolute; left: 10px; top: 10px; width: 460px; height: 560px; border: 2px solid #401910; box-sizing: border-box; }
+.popup .pNotice{overflow: hidden; padding: 40px; padding-bottom: 20px; box-sizing: border-box;}
+.popup .pMobile{overflow: hidden; padding: 40px; padding-top: 20px; box-sizing: border-box;}
+.pMobile img{margin-right: 20px; padding-left: 10px; box-sizing: border-box;}
+.pMobile p{position: relative; top: 40px;}
+.popup .title{display: block; margin-bottom: 20px; color: #333; font-size: 36px; font-weight: 700;}
+.popup p{padding-left: 10px; color: #333; font-weight: 500; line-height: 27px;}
+.popup .red{color: #59180a; font-weight: 500;}
+.popup .pClose{position: absolute; bottom: 20px; right: 30px;}
+
+/* header */
+header{position: absolute; top: 0; left: 0; z-index: 6000; width: 100%; min-width: 1280px; height: 180px; background-color: rgba(204,204,204,.3);}
+.hTop{position: relative; width: 1280px; height: 120px; margin: 0 auto; }
+.hTop h1{ width: 100%; height: 100%; padding-top: 8px; box-sizing: border-box; text-align: center; }
+.hTop h1 img{display: inline-block;} /* base에서 block을 줘서 text-align: center;로 가운데 오지 않기 때문에 inline-block으로 변경 */
+
+/* tNav */
+.tNav{position: absolute; right: 120px; top: 38px;}
+.tNav li{float: left; margin-left: 10px;}
+.tNav a{color: #fff; font-size: 12px; font-family: 'Roboto', sans-serif; line-height:27px;}
+.tNav a:hover{color: #59180a;}
+
+/* language */
+.language{position: absolute; right: 30px; top: 40px; width: 80px; height: auto;}
+.language button{display: block; width: 80px; height: 25px; padding: 0 5px; border: 1px solid #fff; box-sizing: border-box; background-color: transparent; line-height: 23px;}
+.language .text{float: left; font-size: 12px; color: #fff; font-family: 'Roboto', sans-serif;}
+.language .text:after{position: absolute; right: 20px; width: 1px; height: 23px; background-color: #fff; content: '';}
+.language .icon{float: right; box-sizing: border-box; font-size: 10px; color: #fff;}
+.language ul{display: none; width: 80px; height: 60px; border: 1px solid #fff; border-top: none; box-sizing: border-box; line-height: 20px; background-color: transparent; }
+.language ul li{width: 100%; height: 33.33%; }
+.language a{display: block; padding-left: 5px; box-sizing: border-box; width: 100%; height: 100%; font-family: 'Roboto', sans-serif; color: #fff; font-size: 12px;}
+.language li:hover a{color: #59180a;}
+.language .icon.active{transform: rotate(180deg);}
+
+/* gnb */
+.gnb{width: 1280px; height: 60px; margin: 0 auto; }
+.gnb > ul > li{position: relative; float: left; width: 210px; height: 60px; text-align: center; line-height: 60px; }
+.gnb .mainNav{display: block; width: 100%; height: 100%; color: #fff; font-size: 18px; font-weight: 800; }
+.gnb .btn{top: 10px; width: 150px; height: 40px; margin-left: 50px; background-color: #401910; }
+.gnb .btn a{display: block; width: 100%; height: 100%; line-height: 40px; text-align: center; color: #8c6c65; font-size: 14px; }
+.gnb li:hover .mainNav{color: #401910;}
+.gnb .btn a:hover{color: #fff;}
+.gnb > ul > li > a.active{ color: #401910; }
+.subNav{display: none; position: absolute; left: 35px; top: 60px; z-index: 4000; width: 150px; height: auto; padding: 15px 0; box-sizing: border-box; background-color: rgba(204,204,204,.3); }
+.subNav li{width: 100%; height: 40px; }
+.subNav a{ display: block; width: 100%; height: 100%; text-align: center; line-height: 40px; color: #fff; font-size: 14px; font-weight: 500;}
+.subNav a:hover{color: #401910; }
+
+/* footer */
+footer{position: relative; width: 1280px; height: 270px; margin: 0 auto; padding-top: 80px; box-sizing: border-box; }
+.fTop{position: relative; width: 1280px; height: 25px; margin: 0 auto 30px;}
+.fBottom{position: relative; width: 1280px; height: 85px; margin: 0 auto; }
+
+/* fNav */
+.fNav{width: 100%; height: 100%; text-align: center; }
+.fNav li{display: inline-block; margin: 0 10px;}
+.fNav li:after{position: relative; left: 12px; top: -2px; content: '|'; font-size: 12px; color: #999;}
+.fNav li.last:after{content: '';}
+.fNav a{font-size: 14px; color: #999;}
+
+/* familySite */
+.familySite{position: absolute; right: 0; top: 0; z-index: 80; width: 140px; height: auto;}
+.familySite button{display: block; width: 140px; height: 25px; padding: 0 10px; border: 1px solid #999; box-sizing: border-box; background-color: transparent; line-height: 23px;}
+.familySite .text{float: left; font-size: 12px; color: #999;}
+.familySite .text:after{position: absolute; right: 30px; width: 1px; height: 23px; background-color: #999; content: '';}
+.familySite .icon{float: right; box-sizing: border-box; font-size: 10px; color: #999;}
+.familySite ul{display: none; width: 140px; height: 75px; border: 1px solid #999; border-top: none; box-sizing: border-box; line-height: 23px; background-color: transparent; }
+.familySite ul li{width: 100%; height: 33.33%; }
+.familySite a{display: block; padding-left: 10px; box-sizing: border-box; width: 100%; height: 100%; color: #999; font-size: 12px;}
+.familySite li:hover a{background-color: #ededed;}
+.familySite .icon.active{transform: rotate(180deg);}
+
+/* footer logo */
+.fBottom h1{float: left; width: 100%; height: 100%; padding-left: 60px; padding-top: 0px; box-sizing: border-box;}
+
+/* address,copy */
+.fBottom .text{position: relative;}
+.fBottom .text span{display: block;}
+.address{position: absolute; left: calc(50% - 315px); font-size: 14px; color: #999; line-height: 24px;}
+.copy{position: absolute; left: calc(50% - 315px); top: 65px; font-size: 14px; color: #999; }
+
+/* sns */
+.fBottom .sns{position: absolute; right: 0; bottom: 0; z-index: 79;}
+.sns li{float: left; width: 30px; height: 30px; margin-left: 5px;}
+.sns li.second{margin-left: 0;}
+
+/* mobileBtn */
+.mobileBtn{display: none; position: absolute; left: 0; right: 0; bottom: 10px; margin: 0 auto; text-align: center; }
+.mobileBtn a{padding: 3px 10px; border: 1px solid #999; color: #999; font-size: 12px;}
+
+/* scrollBtn */
+.scrollBtn{position: fixed; bottom: 200px; right: 160px; z-index: 99999; width: 45px; height: 45px; text-indent: -999em;}
+.scrollBtn a{display: block; width: 100%; height: 100%; background-image: url(../images/common/scroll_btn_out.png); background-repeat: no-repeat;}
+.scrollBtn a:hover{background-image: url(../images/common/scroll_btn_over.png);}
+

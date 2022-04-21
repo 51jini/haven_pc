@@ -1,0 +1,135 @@
+/* tNavImg */
+#tNavImg{width: 100%; min-width: 1280px; height: 700px; padding-top: 500px; box-sizing: border-box; background-image: url(../images/tnav/top_bg.jpg); background-repeat: no-repeat; background-position: center top; background-attachment: fixed;}
+
+/* login */
+.login .formWrap{width: 1280px; height: 600px; border: 1px solid #401910; padding: 80px 0; box-sizing: border-box;}
+.login .member, .login .noMember{position: relative; float: left; width: 620px; height: 100%; padding: 0 40px; box-sizing: border-box; text-align: center;}
+.login .member:after{position: absolute; left: 620px; top: -31px; content: ''; display: block; width: 1px; height: 500px; background-color: #ededed;}
+.login input::placeholder{color: #ccc;}
+.login .box01{width: 500px; height: 70px; border: 1px solid #ededed; padding-left: 20px; box-sizing: border-box; margin-bottom: 20px;}
+.login .search{display: block; position: absolute; right: 60px; top: 260px; color: #999; font-size: 14px;}
+.login .search:hover{color: #401910; text-decoration: underline;}
+.phoneNumber{width: 500px; margin: 0 auto 20px;}
+.phoneNumber #firstNum{width: 150px; height: 40px; border: 1px solid #ededed; padding-left: 10px; box-sizing: border-box; float: left;}
+.phoneNumber #lastNum{float: right;}
+.phoneNumber input{width: 150px; height: 40px; border: 1px solid #ededed; padding-left: 20px; box-sizing: border-box;}
+.login .btn{display: block; width: 500px; height: 60px; margin: 0 auto; background-color: #401910; color: #fff; font-size: 20px;}
+.login .chkArea{text-align: left; padding-left: 25px; box-sizing: border-box; margin-bottom: 20px; }
+.login .chkArea label{color: #999; font-size: 14px; cursor: pointer;}
+.loginChk input[type=checkbox]{display: none;}
+.loginChk .loginChkIcon{position: relative; top: 5px; left: 3px; display: inline-block; width: 20px; height: 20px; background-image: url(../images/tnav/login_chk_out.png); background-repeat: no-repeat; cursor: pointer;}
+.loginChk input:checked + .loginChkIcon{background-image: url(../images/tnav/login_chk_active.png);}
+
+/* joinStep */
+#joinStep{width: 800px; height: 100px; margin: 80px auto 0; box-sizing: border-box; }
+#joinStep li{position: relative; float: left; width: 100px; height: 100px; margin-right: 250px; padding-top: 20px; border: 1px solid #8c6c65; border-radius: 50px; box-sizing: border-box; background-color: #fff; color: #8c6c65; font-size: 18px; text-align: center;}
+#joinStep li.last{margin-right: 0;}
+#joinStep li:after{content: ''; position: absolute; left: 110px; top: calc(50% - 10px); display: block; width: 230px; height: 30px; background-image: url(../images/tnav/step_arrow.png);}
+#joinStep li.last:after{width: 0; height: 0; background: none;}
+#joinStep li.active{background-color: #401910; color: #fff;}
+
+/* nextBtn */
+.line{position: relative;}
+#nextBtn{display: block; width: 200px; height: 60px; margin: 0 auto; border: 1px solid #59180a; box-sizing: border-box; background-color: #fff; color: #59180a; font-size: 20px; text-align: center; line-height: 60px; cursor: pointer;}
+#nextBtn:hover{background-color: #59180a; color: #fff;}
+#nextBtn:before{content: ''; position: absolute; top: -40px; left: 0; right: 0; margin: auto; display: block; width: 1260px; height: 1px; background-color: #ccc;}
+
+/* checkbox */
+.join .chkBox{margin-bottom: 10px; cursor: pointer;}
+.join .chkBox input[type=checkbox]{display: none;}
+.join .checkIcon{position: relative; top: 6px; left: 4px; display: inline-block; width: 25px; height: 25px; background-image: url(../images/tnav/chk_out.png); background-repeat: no-repeat; cursor: pointer; }
+.chkBox input[type=checkbox]:checked + .checkIcon{background-image: url(../images/tnav/chk_active.png);}
+.join .provision .chkBox{float: right; padding-right: 20px;}
+.join .provision .chkBox label{font-size: 14px;}
+
+/* join */
+.join h4{margin-bottom: 10px; font-weight: 500;}
+.join p{font-size: 18px;}
+.join .all{position: relative; width: 100%; height: 80px; margin-bottom: 60px; padding: 0 40px; box-sizing: border-box; }
+.join .all:before{content: ''; position: absolute; bottom: -20px; left: 10px; display: block; width: 1260px; height: 1px; background-color: #ccc;}
+.join .all h4{color: #333; font-size: 20px; }
+.join .all p{font-size: 20px;}
+.join .all form{position: relative; bottom: -40px;}
+.join .all label{font-size: 18px;}
+.join .provision{width: 100%; padding: 0 20px; box-sizing: border-box; }
+.provision01{margin-bottom: 60px;}
+.provision02{margin-bottom: 60px;}
+.provision03{ margin-bottom: 120px;}
+.join .provision h4{float: left; padding-left: 20px; font-weight: 500;}
+.join .provision span.red{color: #80230f; }
+.join .provision .agreeTxt{width: 1240px; height: 200px; overflow: auto; padding: 20px; border: 1px solid #ededed; box-sizing: border-box; }
+.join .provision .agreeTxt h5{font-size: 14px; font-weight: 400; line-height: 25px;}
+.join .provision .agreeTxt p{font-size: 14px; line-height: 25px;}
+.join .provision .agreeTxt li{font-size: 13px; line-height: 23px;}
+.join .provision ol{padding-lefT: 40px; box-sizing: border-box;}
+.join .provision ol.pl{padding-left: 0;}
+.join .provision .decimal > li{list-style: decimal; }
+.join .provision .disc{padding-left: 30px; }
+.join .provision .disc li{list-style: disc;}
+
+/* join02 */
+#joinForm{position: relative; width: 100%; height: 1080px;}
+#joinForm:after{content: ''; display: block; position: absolute; bottom: 40px; left: 0; right: 0; margin: auto; width: 1260px; height: 1px; background-color: #ccc; }
+.join02 .box01{width: 600px; height: 60px; border: 1px solid #ededed; padding-left: 20px; box-sizing: border-box; margin: 10px 0 20px; }
+.join02 input::placeholder{color: #999; font-size: 14px;}
+.join02 span.star{position: relative; top: 4px; left: 2px; color: #80230f;}
+.essential{width: 100%; height: 240px; margin-bottom: 80px; }
+.defaultWrap{width: 100%; height: 240px; margin-bottom: 80px;}
+.default01{position: relative; width: 620px; height: 240px; margin-right: 20px; }
+#korName{width: 460px; height: 60px; border: 1px solid #ededed; padding-left: 20px; box-sizing: border-box; margin: 10px 0 20px;  }
+.default01 .gender{position: absolute; z-index: 500; right: 20px; top: 34px; width: 120px; height: auto; }
+.default01 .gender button{position: relative; display: block; width: 120px; height: 60px; border: 1px solid #ededed; box-sizing: border-box; background-color: #fff; line-height: 58px;}
+.default01 .gender ul{display: none; width: 120px; height: 120px; border: 1px solid rgba(140,108,101,.6); box-sizing: border-box; background-color: #fff;}
+.default01 .gender li{width: 100%; height: 60px; padding-left: 10px; box-sizing: border-box; line-height: 58px; color: #999; cursor: pointer;}
+.default01 .gender li:hover{color: #8c6c65;}
+.default01 .birth{position: relative; }
+.birth .birthTit{position: absolute; top: 130px;}
+.default01 .birth > div{position: absolute; z-index: 499; top: 160px; width: 187px; height: auto; margin-right: 20px;}
+.default01 .birth .mBox{left: 207px;}
+.default01 .birth .dBox{right: 20px;}
+.default01 .birth .dBox{margin-right: 0;}
+.default01 .birth button{position: relative; display: block; width: 100%; height: 60px; border: 1px solid #ededed; box-sizing: border-box; background-color: #fff; line-height: 58px;}
+.default01 .birth ul{ display: none; width: 100%; height: 180px; overflow-y: scroll; border: 1px solid rgba(140,108,101,.6); box-sizing: border-box; background-color: #fff; }
+.default01 .birth li{ width: 100%; height: 60px; padding-left: 10px; box-sizing: border-box; line-height: 58px; color: #999; cursor: pointer;}
+.default01 .birth li:hover{color: #8c6c65;}
+.default01 .birth .birthTit{height: 40px;}
+.default02{width: 620px; height: 240px;}
+.default02 .box02{width: 295px; height: 60px; border: 1px solid #ededed; padding-left: 20px; box-sizing: border-box; margin: 10px 0 20px; }
+.default02 .phone{position: relative; top: 10px; width: 100%; }
+.default02 .phoneTit{margin-bottom: 10px; width: 100%; padding-left: 25px; box-sizing: border-box;}
+.default02 .phone .firstNum{position: absolute; left: 25px; z-index: 498;}
+.default02 .firstNum button{position: relative; display: block; width: 187px; height: 60px; border: 1px solid #ededed; box-sizing: border-box; background-color: transparent; line-height: 58px;}
+.default02 .firstNum ul{position: relative; left: -187px; top: 59px; display: none; width: 187px; height: 180px; overflow-y: scroll; border: 1px solid rgba(140,108,101,.6); box-sizing: border-box; background-color: #fff; }
+.default02 .firstNum li{width: 100%; height: 60px; padding-left: 10px; box-sizing: border-box; line-height: 58px; color: #999; cursor: pointer;}
+.default02 .phone input{width: 187px; height: 60px; margin-left: 15px; border: 1px solid #ededed; padding-left: 10px; box-sizing: border-box;  }
+.join02 .text{padding-left: 10px; box-sizing: border-box; color: #999; }
+.join02 .icon{position: absolute; top: calc(50% - 7px); right: 10px; display: block; width: 20px; height: 14px; }
+.join02 .icon.active{transform: rotate(180deg);}
+
+.join02 .address{position: relative; left: 0; width: 620px; height: 450px;}
+.address h5{margin-bottom: 10px; font-weight: 400;}
+#postcode{width: 300px;}
+.address input{ width: 600px; height: 60px; border: 1px solid #ededed; margin-bottom: 20px; margin-right: 20px; padding-left: 20px; box-sizing: border-box; background-color: #fff;}
+#postSearch{width: 200px; padding: 0; margin: 0; border: 1px solid #8c6c65; background-color: #fff; color: #8c6c65; cursor: pointer;}
+#postSearch:hover{box-shadow: 2px 2px 2px #ddd; }
+#postBox{display: none; position: absolute; top: 100px; width: 600px; height: 300px; border: 1px solid #8c6c65; background-color: #fff; z-index: 505;}
+.marketing{width: 620px; height: 450px; padding-left: 20px; box-sizing: border-box;}
+.marketing h5{margin: 40px 0 10px; font-weight: 500;}
+.marketing p{margin-bottom: 30px; font-weight: 300; font-size: 14px;}
+.marketing .chkBox{margin-right: 40px; }
+.marketing .checkIcon{ left: 0; top: 7px;}
+
+/* checkId */
+#checkId{width: 180px; height: 60px; border: 1px solid #8c6c65; box-sizing: border-box; background-color: #fff; text-align: center; line-height: 58px; color: #8c6c65; cursor: pointer;}
+#checkId:hover{box-shadow: 2px 2px 2px #ddd;}
+#chkId{position: relative; text-align: center;}
+.checkIdClose{position: absolute; bottom: -60px; left: 0; right: 0; margin: auto; width: 120px; height: 40px; line-height: 40px; text-align: center;}
+.checkIdClose a{display: block; width: 100%; height: 100%; background-color: #401910; text-decoration: none; color: #fff;}
+
+/* join03 */
+.join03 h3{height: 250px; padding-top: 280px; box-sizing: border-box; background-image: url(../images/tnav/join_finish_icon01.png); background-repeat: no-repeat; background-position: top center; }
+.join03 .btn{width: 400px;; height: auto; padding-top: 100px; box-sizing: border-box; margin: 0 auto;}
+.join03 a{display: block; width: 180px; height: 60px; border: 1px solid #401910; box-sizing: border-box; background-color: #fff; color: #401910; line-height: 58px; text-align: center; line-height: 60px; font-weight: 500; }
+.join03 a:hover{background: #401910; color: #fff;}
+.join03 .goLogin{margin-right: 20px;}
+

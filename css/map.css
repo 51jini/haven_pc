@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* map */
+#map{width: 1280px; height: 665px; margin-bottom: 20px; background-color: #333;}
+
+/* title */
+#subContents .title{margin-bottom: 80px; }
+#subContents .title h4{ color: #401910; font-size: 24px; font-weight: 500;}
+#subContents .title li{float: left; margin-right: 20px; color: #401910; }
+
+/* tabBtn */
+.tabMenu{width: 100%; }
+.tabMenu .tabBtn{width: 400px; height: 40px; margin-bottom: 20px; }
+.tabMenu .tabBtn li{float: left; width: 33.33%; height: 100%; text-align: center; line-height: 40px; }
+.tabMenu .tabBtn li a{display: block; width: 100%; height: 100%; font-weight: 500;}
+.tabMenu .tabBtn li a.active{color: #8c6c65; border-bottom: 2px solid #8c6c65;}
+.tabMenu .tabContentsWrap{ width: 100%; overflow: hidden;}
+.tabMenu .tabContentsWrap > div{display: none;}
+
+/* car */
+.car li{width: 100%; height: 140px; padding-top: 30px; box-sizing: border-box; margin-bottom: 40px;}
+.car .masan{margin-bottom: 0; }
+.car h5{height: 40px; margin-left: 50px; font-weight: 500;}
+.car img{margin: 0 auto;}
+.car span{display: block; float: left; font-size: 14px;}
+.car .seoul .txt01{ width: 205px; }
+.car .seoul .txt02{ width: 160px; }
+.car .seoul .txt03{ width: 164px; }
+.car .seoul .txt04{ width: 162px; }
+.car .seoul .txt05, .car .seoul .txt06{ width: 170px; }
+.car .masan .txt01{ width: 218px; }
+.car .masan .txt02{ width: 150px; }
+.car .masan .txt03{ width: 154px; }
+.car .masan .txt04, .car .masan .txt05, .car .masan .txt06{ width: 170px; }
+.car .txt07{ width: 175px; }
+.car .txt08{ color: #8c6c65; }
+
+/* public */
+.public{padding: 0 40px; box-sizing: border-box;}
+.public h5{height: 60px; padding-left: 30px; box-sizing: border-box; line-height: 60px; font-weight: 500;}
+.public .subway{margin-bottom: 40px;}
+.public .subway h5{background: url(../images/customer/map_subway_icon.png) no-repeat 1px 15px;}
+.public .subway li{position: relative; width: 100%; height: 110px; padding: 0 20px; box-sizing: border-box; }
+.public .subway li.near{margin-bottom: 40px;}
+.public .subway .tit{display: block; margin-bottom: 20px; font-size: 14px;}
+.public .subway img{padding-left: 60px; box-sizing: border-box;}
+.public .subway span{display: block; float: left; font-size: 14px;}
+.public .near .txt01{width: 240px; padding-left: 10px; box-sizing: border-box;}
+.public .near .txt02{width: 320px; }
+.public .subway .last{color: #8c6c65;}
+.public .gimhae .txt01{width: 200px; padding-left: 40px; box-sizing: border-box;}
+.public .gimhae .txt02{width: 180px; }
+.public .gimhae .txt03{width: 200px; }
+.public .gimhae .txt04{width: 150px; }
+.public .bus h5{background: url(../images/customer/map_bus_icon.png) no-repeat 1px 15px;}
+.public .bus p{padding: 0 20px; box-sizing: border-box; margin-bottom: 10px; font-size: 14px;}
+
+/* airport */
+.airport{position: relative; padding: 0 40px;}
+.airport h5{height: 60px; padding-left: 30px; box-sizing: border-box; background: url(../images/customer/map_airplane_icon.png) no-repeat 1px 15px; line-height: 60px; font-weight: 500;}
+.airport ul{padding-left: 20px; box-sizing: border-box; margin-bottom: 20px;}
+.airport li.odd{float: left; margin-right: 80px;}
+.airport li.first{margin-right: 100px;}
+.airport li{font-size: 14px; line-height: 80px; }
+.airport table{position: absolute; top: 80px; right: 380px; border: 1px solid #8c6c65;}
+.airport td{padding: 10px; border: 1px solid rgba(140,108,101,.3); box-sizing: border-box; color: #999; font-size: 14px; text-align: center;}
+.airport td.tNone{border-top: none;}
+.airport td.rNone{border-right: none;}
+.airport td.lNone{border-left: none;}
+.airport td.bNone{border-bottom: none;}
